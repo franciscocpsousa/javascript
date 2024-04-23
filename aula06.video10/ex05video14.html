@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(95, 90, 244);
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique aqui</div>
+    <div id="text">querySelector</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'yellow'
+        var body = window.document.body
+        body.style.background = 'green'
+
+        /* window.alert(p1.innerText) */
+        var d = document.getElementById('msg')
+        d.style.background = 'blue'
+        d.innerText = 'Estou aguardando...'
+
+        var d = window.document.querySelector('div#text')
+        d.style.color = 'blue'
+        d.style.background = 'yellow'
+        d.style.textAlign = 'center'
+        d.style.fontSize = '40px'
+
+
+
+        //Dom(Document Object Model) é um facilitador que existe dentro do navegador, dentro do HTML5 pra dar acesso aos elementos diretamento pro JavaScript. 
+        // Sem o DOM teriamos muito dificuldade pra acessar os
+        // documentos dentro da nossa página.
+
+
+
+        /* ÁRVORE  DOM
+                         window 
+          location      document   history
+                           |    
+                          html 
+                          /  \   
+                       head   body
+                     /   /    \ \ \ \
+                 meta title     \ \ \ \
+                                h1 p p div
+                                   | 
+                                strong
+        */
+        //var d = window.document.getElementById('msg')
+        //d.innerText = 'Texto alterado'
+        //document.getElementById('msg').innerText='Olá'
+        /* var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'OLÁ' */
+        /* var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue' */
+
+
+        
+        
+    </script>
+    
+</body>
+</html>

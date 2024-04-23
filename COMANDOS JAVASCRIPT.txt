@@ -1,0 +1,60 @@
+************CONVERSÃO DE STRING PARA NÚMERO - VIDEO 10
+
+
+String > Number
+
+  number(n)
+
+
+Número > String
+
+   String(n)
+
+
+
+
+*****************FORMATANDO STRINGS- VÍDEO 10
+
+
+ templates strings   >> 
+
+  
+` ${ } `  -> place holder -  espaço reservado <-
+
+
+*******EXEMPLO***
+
+
+var n1 = Number(window.prompt('Digite um número: '))
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2
+       window.alert(`A soma dos valores ${n1} e ${n2} é ${s}`)
+
+
+
+
+
+s.length                    // quantos caracteres a string tem
+s.toUpperCase()     //  tudo para letras 'MAIÚSCULAS'
+s.toLowerCase()    // tudo para  'minúsculas'
+
+
+*****************FORMATANDO NÚMEROS - VÍDEO 10   35min
+
+>var n1 = 1545.5
+
+>n1 
+
+1545.50
+
+>n1.toFixed(2)       ****acrescentar casas decimais****
+
+'1545.50'
+>n1.toFixed(2).replace('.',',')      ****trocar ponto por vírgula *****
+
+
+n1.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})  ****trocar MOEDA ***** 9m35s
+n1.toLocaleString('pt-BR',{style:'currency',currency:'USD'})
+n1.toLocaleString('pt-BR',{style:'currency',currency:'EUR'})
+
+
