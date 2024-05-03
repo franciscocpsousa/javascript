@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Ternários</title>
+</head>
+<body>
+    
+
+    <script>
+        var anoatual = Number(prompt("Digite o ano atual: "))
+        var anonasc = Number(prompt("Digite o seu ano de nascimento: "))
+        var idade = anoatual - anonasc
+        document.write(`Você tem ${idade} anos.`)
+        idade >= 18 ?
+        document.write('APTO A TIRAR A CARTEIRA' ): 
+        document.write('INAPTO A TIRAR A CARTEIRA')         
+    </script>
+</body>
+</html>
